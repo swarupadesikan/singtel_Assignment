@@ -40,6 +40,6 @@ a. A butterfly can fly
 b. A butterfly does not make a sound
 
 2. Can you optimize your model to account for the metamorphosis from caterpillar to
-butterfly? done using Egg as base class with getState method having different stages
+butterfly? done using Egg as base class with getState method having different stages larva and pupa
 a. A caterpillar cannot fly
 b. A caterpillar can walk (crawl)
