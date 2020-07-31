@@ -1,17 +1,23 @@
 package com.app.animals;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.app.animals.common.Constants;
 import com.app.animals.model.Bird;
 import com.app.animals.model.Chicken;
 import com.app.animals.model.Duck;
+import com.app.animals.model.Parrot;
 import com.app.animals.model.Rooster;
+
 
 @SpringBootApplication
 public class SolutionApplication implements CommandLineRunner {
-
+	@Autowired
+	Parrot parrot;
+	
 	public static void main(String[] args) {
 		SpringApplication.run(SolutionApplication.class, args);
 	}
@@ -33,7 +39,10 @@ public class SolutionApplication implements CommandLineRunner {
 		Rooster roost = new Rooster();
 		roost.walk();
 		roost.sing();
-
+		parrot.walk();
+		parrot.sing(Constants.DOG);
+		parrot.fly();
+	
 	}
 
 }
