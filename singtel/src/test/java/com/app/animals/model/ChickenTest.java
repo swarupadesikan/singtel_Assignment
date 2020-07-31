@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import com.app.animals.common.Constants;
 
-class BirdTest {
+class ChickenTest {
 
 	@Test
-	void testBird() {
-		Bird bird = new Bird();
-		assertEquals(Constants.SING, bird.sing());
-		assertEquals(Constants.WALK, bird.walk());
+	void test() {
+		Chicken chick = new Chicken();
+		assertEquals(Constants.CLUCK, chick.sing());
+		assertEquals(Constants.WALK, chick.walk());
 	}
 
 }

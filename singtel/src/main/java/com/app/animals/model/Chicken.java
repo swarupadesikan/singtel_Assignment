@@ -2,9 +2,9 @@ package com.app.animals.model;
 
 import com.app.animals.common.Constants;
 
-public class Bird extends Animal {
-	
+public class Chicken extends Bird {
+
 	public String sing() {
-		return Constants.SING;
+		return Constants.CLUCK;
 		}
 }
