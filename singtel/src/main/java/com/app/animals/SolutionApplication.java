@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.app.animals.common.Constants;
 import com.app.animals.model.Bird;
+import com.app.animals.model.Butterfly;
+import com.app.animals.model.Caterpillar;
 import com.app.animals.model.Chicken;
 import com.app.animals.model.ClownFish;
 import com.app.animals.model.Dolphin;
@@ -57,6 +59,12 @@ public class SolutionApplication implements CommandLineRunner {
 		cf.getCharacteristic();
 		Dolphin dp = new Dolphin();
 		dp.swim();
-	}
+		Butterfly butrFly = new Butterfly();
+		butrFly.fly();
+		butrFly.getState();
+		Caterpillar catpr = new Caterpillar();
+		catpr.walk();
+		catpr.getState();
+		}
 
 }
