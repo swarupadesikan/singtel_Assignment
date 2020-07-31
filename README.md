@@ -21,3 +21,16 @@ b. A parrot living with cats says: “Meow”
 c. A parrot living near the rooster says: “Cock-a-doodle-doo”
 d. How do you keep the parrot maintainable? What if we need another parrot
 lives near a Duck? Or near a phone that rings frequently? the sound is maintained in property file. Parrot sing method takes animal name is param and appropriate sound is called from application.properties
+B. Model fish as well as other swimming animals
+1. In addition to the birds, can you model a fish? done
+a. Fishes don’t sing
+b. Fishes don’t walk
+c. Fishes can swim
+2. Can you specialize the fish as a Shark and as a Clownfish? done
+a. Sharks are large and grey
+b. Clownfish are small and colourful (orange)
+c. Clownfish make jokes
+d. Sharks eat other fish
+3. Dolphins are not exactly fish, yet, they are good swimmers
+a. Can you model a dolphin that swims without inheriting from a fish class? inherited animal and implemented AquaticAnimals
+b. How do you avoid duplicating code or introducing unneeded overhead? made use of default method feature available in java8
