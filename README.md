@@ -43,3 +43,27 @@ b. A butterfly does not make a sound
 butterfly? done using Egg as base class with getState method having different stages larva and pupa
 a. A caterpillar cannot fly
 b. A caterpillar can walk (crawl)
+E. Counting animals
+Suppose you have an array of animals, e.g.
+Animal[] animals = new Animal[]{
+new Bird(),
+new Duck(),
+new Chicken(),
+new Rooster(),
+new Parrot(),
+new Fish(),
+new Shark(),
+new Clownfish(),
+new Dolhpin(),
+new Frog(),
+new Dog(),
+new Butterfly(),
+new Cat()
+};
+Note: The above instantiation may be different if you chose to set up your object model
+differently... (hopefully you did)
+1. Can you share the code to count: done
+a. how many of these animals can fly? by checking instance of flyingAnimals
+b. how many of these animals can walk? by checking instance of walkingAnimals
+c. how many of these animals can sing? by checking instance of AquaticAnimals
+d. how many of these animals can swim? by checking instance of Bird
