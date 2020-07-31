@@ -9,3 +9,7 @@ a. A duck says: “Quack, quack” done
 b. A duck can swim done
 c. A chicken says: “Cluck, cluck” done
 d. A chicken cannot fly (assumption: its wings are clipped but ignore that) done
+3. Now how would you model a rooster?
+a. A rooster says: “Cock-a-doodle-doo” done
+b. How is the rooster related to the chicken? rooster can be sub class of chicken
+c. Can you think of other ways to model a rooster without using inheritance? designed rooster as subclass of bird instead of chicken
