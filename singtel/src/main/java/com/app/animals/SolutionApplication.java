@@ -6,6 +6,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.app.animals.common.Constants;
+import com.app.animals.model.Animal;
+import com.app.animals.util.AnimalCount;
 import com.app.animals.model.Bird;
 import com.app.animals.model.Butterfly;
 import com.app.animals.model.Caterpillar;
@@ -17,11 +19,14 @@ import com.app.animals.model.Fish;
 import com.app.animals.model.Parrot;
 import com.app.animals.model.Rooster;
 import com.app.animals.model.Shark;
+import com.app.animals.service.AnimalService;
 
 @SpringBootApplication
 public class SolutionApplication implements CommandLineRunner {
 	@Autowired
 	Parrot parrot;
+	@Autowired
+	AnimalService as;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SolutionApplication.class, args);
@@ -65,6 +70,24 @@ public class SolutionApplication implements CommandLineRunner {
 		Caterpillar catpr = new Caterpillar();
 		catpr.walk();
 		catpr.getState();
+		//
+		Animal[] animals = new Animal[]{
+				new Bird(),
+				new Duck(),
+				new Chicken(),
+				new Rooster(),
+				new Parrot(),
+				new Fish(),
+				new Shark(),
+				new ClownFish(),
+				new Dolphin(),
+				new Butterfly(),
+				new Caterpillar()};
+		AnimalCount ac = as.count(animals);
+		System.out.println("fly cnt "+ac.getFlyCount());
+		System.out.println("walk cnt"+ac.getWalkCount());
+		System.out.println("sing cnt"+ac.getSingCount());
+		System.out.println("swim cnt"+ac.getSwimCount());
 		}
 
 }

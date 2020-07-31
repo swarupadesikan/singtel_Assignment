@@ -1,8 +1,7 @@
 package com.app.animals.model;
 
-public interface SingingAnimals {
+public interface NeighbourAnimals {
 	
-	public String sing();
 	public String sing(String sound);
 
 }

@@ -8,7 +8,7 @@ import com.app.animals.common.Constants;
 
 
 @Component
-public class Parrot extends Bird implements FlyingAnimals{
+public class Parrot extends Bird implements FlyingAnimals, NeighbourAnimals{
 	@Autowired
 	private Environment env;
 
