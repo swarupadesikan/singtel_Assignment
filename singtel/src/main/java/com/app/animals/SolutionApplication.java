@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.app.animals.model.Bird;
 import com.app.animals.model.Chicken;
 import com.app.animals.model.Duck;
+import com.app.animals.model.Rooster;
 
 @SpringBootApplication
 public class SolutionApplication implements CommandLineRunner {
@@ -29,6 +30,10 @@ public class SolutionApplication implements CommandLineRunner {
 		Chicken chick = new Chicken();
 		chick.walk();
 		chick.sing();
+		Rooster roost = new Rooster();
+		roost.walk();
+		roost.sing();
+
 	}
 
 }

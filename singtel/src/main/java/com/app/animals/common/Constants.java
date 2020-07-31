@@ -7,4 +7,5 @@ public class Constants {
 	public static final String SWIM= "Ï am swimming";
 	public static final String QUACK= "Quack, quack";
 	public static final String CLUCK= "Cluck, cluck";
+	public static final String COCKADOODLE= "Cock-a-doodle-doo";
 }
