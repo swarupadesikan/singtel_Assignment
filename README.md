@@ -34,3 +34,12 @@ d. Sharks eat other fish
 3. Dolphins are not exactly fish, yet, they are good swimmers
 a. Can you model a dolphin that swims without inheriting from a fish class? inherited animal and implemented AquaticAnimals
 b. How do you avoid duplicating code or introducing unneeded overhead? made use of default method feature available in java8
+D. Model animals that change their behaviour over time
+1. Can you model a butterfly? done
+a. A butterfly can fly
+b. A butterfly does not make a sound
+
+2. Can you optimize your model to account for the metamorphosis from caterpillar to
+butterfly? done using Egg as base class with getState method having different stages larva and pupa
+a. A caterpillar cannot fly
+b. A caterpillar can walk (crawl)
