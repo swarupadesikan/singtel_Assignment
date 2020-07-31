@@ -6,4 +6,10 @@ public class Fish extends Animal implements AquaticAnimals {
 		return null;
 	}
 	
+	public String getColor() {
+		return null;
+	}
+	public  String getSize() {
+		return null;
+	}
 }

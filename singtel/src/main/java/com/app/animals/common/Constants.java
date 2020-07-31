@@ -21,4 +21,6 @@ public class Constants {
 	public static final String SMALL= "I am small";
 	public static final String PUPA= "pupa";
 	public static final String LARVA= "larva";
+	public static final String TAMIL= "tamil";
+	public static final String TAMIL_COCK_SOUND= "cockara-ko-ko";
 }

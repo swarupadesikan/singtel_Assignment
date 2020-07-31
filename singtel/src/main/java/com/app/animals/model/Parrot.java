@@ -5,10 +5,11 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import com.app.animals.common.Constants;
+import com.app.animals.model.singmodel.AnimalSound;
 
 
 @Component
-public class Parrot extends Bird implements FlyingAnimals, NeighbourAnimals{
+public class Parrot extends Bird implements FlyingAnimals, AnimalSound{
 	@Autowired
 	private Environment env;
 

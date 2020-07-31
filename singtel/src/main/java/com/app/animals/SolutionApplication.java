@@ -25,6 +25,9 @@ import com.app.animals.service.AnimalService;
 public class SolutionApplication implements CommandLineRunner {
 	@Autowired
 	Parrot parrot;
+	
+	@Autowired
+	Rooster roost;
 	@Autowired
 	AnimalService as;
 	
@@ -46,9 +49,9 @@ public class SolutionApplication implements CommandLineRunner {
 		Chicken chick = new Chicken();
 		chick.walk();
 		chick.sing();
-		Rooster roost = new Rooster();
 		roost.walk();
 		roost.sing();
+		roost.sing(Constants.TAMIL);
 		parrot.walk();
 		parrot.sing(Constants.DOG);
 		parrot.fly();

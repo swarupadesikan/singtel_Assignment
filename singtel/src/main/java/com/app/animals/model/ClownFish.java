@@ -3,7 +3,7 @@ package com.app.animals.model;
 import com.app.animals.common.Constants;
 
 public class ClownFish extends Fish {
-
+	
 	public String getCharacteristic() {
 		return Constants.JOKES;
 	}
