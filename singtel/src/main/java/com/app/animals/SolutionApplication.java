@@ -8,10 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.app.animals.common.Constants;
 import com.app.animals.model.Bird;
 import com.app.animals.model.Chicken;
+import com.app.animals.model.ClownFish;
+import com.app.animals.model.Dolphin;
 import com.app.animals.model.Duck;
+import com.app.animals.model.Fish;
 import com.app.animals.model.Parrot;
 import com.app.animals.model.Rooster;
-
+import com.app.animals.model.Shark;
 
 @SpringBootApplication
 public class SolutionApplication implements CommandLineRunner {
@@ -42,7 +45,18 @@ public class SolutionApplication implements CommandLineRunner {
 		parrot.walk();
 		parrot.sing(Constants.DOG);
 		parrot.fly();
-	
+		Fish fish = new Fish();
+		fish.swim();
+		Shark shark = new Shark();
+		shark.getColor();
+		shark.getSize();
+		shark.getCharacteristic();
+		ClownFish cf = new ClownFish();
+		cf.getColor();
+		cf.getSize();
+		cf.getCharacteristic();
+		Dolphin dp = new Dolphin();
+		dp.swim();
 	}
 
 }
